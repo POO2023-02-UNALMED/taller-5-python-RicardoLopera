@@ -27,7 +27,7 @@ class Animal:
         
         if self._zona != None :
             cadenaCompleta = cadena + ', la zona en la que me ubico es ' + self._zona.getNombre() + ', en el ' + self._zona.getZoo.getNombre()
-            
+
             return cadenaCompleta
 
         return cadena 
@@ -44,10 +44,10 @@ class Animal:
     def setEdad(self, edad):
         self._edad = edad
     
-    def getHabitad(self):
+    def getHabitat(self):
         return self._habitat
     
-    def setHabitad(self, habitat):
+    def setHabitat(self, habitat):
         self._habitad = habitat
     
     def getGenero(self):
