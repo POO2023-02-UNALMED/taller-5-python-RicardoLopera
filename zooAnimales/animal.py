@@ -22,10 +22,12 @@ class Animal:
         return cadena
 
     def toString(self):
-        cadena = "Mi nombre es " + self._nombre + ", tengo una edad de" + self._edad + ",habito en "+ self._habitat + " y mi genero es "+ self._genero 
-
+        cadena = 'Mi nombre es ' + self._nombre + ', tengo una edad de ' + str(self._edad)\
+        + ', habito en ' + self._habitat + ' y mi genero es ' + self._genero
+        
         if self._zona != None :
-            cadenaCompleta = cadena + ", la zona en la que me ubico es "+ self._zona +", en el" + self._zona.getZoo.getNombre()
+            cadenaCompleta = cadena + ', la zona en la que me ubico es ' + self._zona.getNombre() + ', en el ' + self._zona.getZoo.getNombre()
+            
             return cadenaCompleta
 
         return cadena 

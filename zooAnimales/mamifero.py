@@ -4,7 +4,7 @@ class Mamifero(Animal):
     _listado = []
     caballos = 0
     leones = 0
-    nMamiferos = 0
+    _nMamiferos = 0
 
     def __init__ (self, nombre, edad, habitat, genero, pelaje, patas):
         super().__init__(nombre, edad, habitat, genero)
@@ -14,7 +14,7 @@ class Mamifero(Animal):
 
     @classmethod
     def cantidadMamiferos(clc):
-        return Mamifero.nMamiferos 
+        return Mamifero._nMamiferos 
     
     def crearCaballo( nombre, edad, genero):
         caballo = Mamifero(nombre, edad, "pradera", genero, True, 4)
